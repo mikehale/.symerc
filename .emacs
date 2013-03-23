@@ -19,6 +19,10 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(setq-default ispell-program-name "aspell")
+
+(set-face-foreground 'vertical-border "white")
+
 ;; programmin'
 
 (global-set-key (kbd "C-c f") 'find-file-in-project)
@@ -34,6 +38,7 @@
 (setq erc-prompt ">"
       erc-fill-column 75
       erc-header-line-format nil
+      erc-hide-list '("JOIN" "PART" "QUIT" "NICK")
       erc-track-exclude-types '("324" "329" "332" "333" "353" "477" "MODE"
                                 "JOIN" "PART" "QUIT" "NICK")
       erc-lurker-threshold-time 3600
@@ -53,8 +58,6 @@
   '(progn
      (when (not (package-installed-p 'erc-hl-nicks))
        (package-install 'erc-hl-nicks))
-     (when (not (package-installed-p 'ercn))
-       (package-install 'ercn))
      (require 'erc-spelling)
      (require 'erc-services)
      (require 'erc-truncate)
@@ -68,8 +71,7 @@
      (add-to-list 'erc-modules 'spelling)
      (set-face-foreground 'erc-input-face "dim gray")
      (set-face-foreground 'erc-my-nick-face "blue")
-     (define-key erc-mode-map (kbd "C-u RET") 'browse-last-url-in-brower)
-     (add-hook 'ercn-notify 'ercn-send-notification)))
+     (define-key erc-mode-map (kbd "C-u RET") 'browse-last-url-in-brower)))
 
 (defun browse-last-url-in-brower ()
   (interactive)

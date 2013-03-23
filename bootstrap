@@ -5,7 +5,7 @@ set -e
 # Not really using these yet:
 PROJECT=$1
 
-sudo apt-get install -y emacs24-nox curl tree unzip zip
+sudo apt-get install -y emacs24-nox curl tree unzip zip mosh
 
 cd $(dirname $0)
 
