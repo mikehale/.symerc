@@ -17,3 +17,5 @@ cp .profile ~
 cp .tmux.conf ~
 
 sudo cp hub /usr/local/bin
+
+sudo wget -qO /usr/local/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
