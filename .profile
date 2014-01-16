@@ -15,7 +15,4 @@ export GEM_HOME=$HOME/.gem/ruby/1.9.1
 
 export EDITOR="emacsclient"
 
-export DEBEMAIL="technomancy@gmail.com"
-export DEBFULLNAME="Phil Hagelberg"
-
 export PROFILE_LOADED=y

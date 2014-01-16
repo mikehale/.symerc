@@ -1,6 +1,6 @@
 [user]
-    name = Phil Hagelberg
-    email = technomancy@gmail.com
+    name = Michael Hale
+    email = mike@hales.ws
 [color]
     branch = auto
     diff = auto
@@ -15,4 +15,4 @@
 [heroku]
 	remote = heroku
 [github]
-	user = technomancy
+	user = mikehale
